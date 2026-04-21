@@ -1,0 +1,286 @@
+/* ===============================
+   MetaSushi — Visual Design System
+   (no layout / no JS changes — only colors, spacing, typography, polish)
+================================ */
+
+/* Print color accuracy */
+* {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ===============================
+   Design tokens
+================================ */
+:root {
+  /* Surfaces */
+  --menu-bg: #f5f1ea;          /* warm cream */
+  --menu-bg-soft: #ffffff;     /* card surface */
+  --menu-bg-night: #1a1f2e;
+
+  /* Brand */
+  --color-primary: #c0473a;    /* coral / sushi red */
+  --color-primary-hover: #cc5347;
+  --color-secondary: #1f2937;  /* deep navy slate */
+  --color-gold: #c8ae7f;       /* muted gold */
+
+  /* Text */
+  --text-strong: #1f2937;
+  --text-muted: rgba(31, 41, 55, 0.62);
+  --text-faint: rgba(31, 41, 55, 0.45);
+}
+
+/* ===============================
+   Base / Typography
+================================ */
+body {
+  font-family: "Epilogue", sans-serif;
+  background: var(--menu-bg);
+  color: var(--text-strong);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.005em;
+  min-height: max(884px, 100dvh);
+}
+
+::selection {
+  background: rgba(192, 71, 58, 0.18);
+  color: var(--text-strong);
+}
+
+/* ===============================
+   Admin toggle
+================================ */
+.no-admin .admin-only {
+  display: none !important;
+}
+
+/* ===============================
+   Menu container — soft elevation
+================================ */
+.menu-container {
+  border-radius: 20px;
+  box-shadow: 0 30px 80px -40px rgba(31, 41, 55, 0.25),
+    0 8px 24px -16px rgba(31, 41, 55, 0.12);
+}
+
+/* ===============================
+   Cover — info rows (Ünvan / Telefon / Instagram)
+================================ */
+.info-row {
+  border-radius: 18px;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    background-color 0.25s ease, box-shadow 0.25s ease;
+}
+.info-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -16px rgba(31, 41, 55, 0.25);
+}
+
+/* ===============================
+   CTA — "Menyuya baxın"
+================================ */
+#scrollToMenuBtn {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary-hover) 0%,
+    var(--color-primary) 100%
+  );
+}
+#scrollToMenuBtn:hover {
+  background-image: linear-gradient(
+    180deg,
+    #d35a4d 0%,
+    var(--color-primary) 100%
+  );
+}
+
+/* ===============================
+   Sticky category nav
+================================ */
+.menu-section {
+  scroll-margin-top: 88px;
+}
+
+/* Hide native scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth horizontal swipe */
+#categoryNavInner {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+  scroll-behavior: smooth;
+}
+
+/* Right-edge fade hint on mobile only */
+.category-nav {
+  position: sticky;
+}
+.category-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    rgba(245, 241, 234, 0) 0%,
+    rgba(245, 241, 234, 0.96) 100%
+  );
+}
+.dark .category-nav::after {
+  background: linear-gradient(
+    to right,
+    rgba(26, 31, 46, 0) 0%,
+    rgba(26, 31, 46, 0.96) 100%
+  );
+}
+@media (min-width: 640px) {
+  .category-nav::after {
+    display: none;
+  }
+}
+
+/* ===============================
+   Category buttons — modern pill
+================================ */
+.category-btn {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--text-strong);
+  border-color: rgba(31, 41, 55, 0.12);
+  transition: background-color 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease, transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+.dark .category-btn {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.category-btn:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(31, 41, 55, 0.2);
+}
+.category-btn:active {
+  transform: scale(0.97);
+}
+.category-btn--active {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  border-color: var(--color-secondary);
+  box-shadow: 0 6px 16px -8px rgba(31, 41, 55, 0.45);
+}
+.category-btn--active:hover {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+
+/* ===============================
+   Section headers — softer, elegant
+================================ */
+.sectionTitle {
+  color: var(--color-secondary);
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+.sectionSubtitle {
+  color: var(--text-muted);
+  letter-spacing: 0.16em;
+}
+
+/* ===============================
+   Menu cards — premium soft elevation
+================================ */
+.menu-card {
+  transition: transform 0.3s ease;
+}
+.menu-card > div:first-child {
+  border-radius: 18px;
+  background-color: var(--menu-bg-soft);
+  border: 1px solid rgba(31, 41, 55, 0.08);
+  box-shadow: 0 4px 16px -10px rgba(31, 41, 55, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.menu-card:hover > div:first-child {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px -18px rgba(31, 41, 55, 0.28);
+  border-color: rgba(192, 71, 58, 0.18);
+}
+.menu-card:active > div:first-child {
+  transform: translateY(-1px);
+}
+.menu-card .bg-cover {
+  border-bottom: 1px solid rgba(31, 41, 55, 0.05);
+}
+
+/* Footer accent */
+footer .material-symbols-outlined {
+  color: var(--color-gold);
+}
+
+/* ===============================
+   Print / PDF
+================================ */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  #addModal,
+  #categoryNav,
+  #scrollToMenuBtn {
+    display: none !important;
+  }
+
+  .category-nav::after {
+    display: none !important;
+  }
+
+  body {
+    background: var(--menu-bg) !important;
+  }
+
+  .menu-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .menu-card,
+  .menu-card > div:first-child {
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+  }
+
+  .menu-section {
+    scroll-margin-top: 0;
+  }
+
+  .menu-section {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .menu-section,
+  .menu-grid,
+  .menu-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .menu-section:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}

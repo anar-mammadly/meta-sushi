@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="light" lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaSushi Menu</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              // Brand
+              primary: "#c0473a", // soft coral / sushi red
+              secondary: "#1f2937", // deep navy slate (elegant)
+              accent: "#c8ae7f", // muted gold
+
+              // Surfaces
+              "background-light": "#f5f1ea", // warm cream (not pure white)
+              "background-dark": "#1a1f2e", // soft navy night (not harsh black)
+              "menu-charcoal": "#2a2f3a", // softer charcoal
+              "muted-gold": "#c8ae7f",
+            },
+            fontFamily: {
+              display: ["Epilogue", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 6px 24px -12px rgba(31, 41, 55, 0.18)",
+              card: "0 4px 16px -8px rgba(31, 41, 55, 0.12)",
+              "card-hover": "0 14px 32px -16px rgba(31, 41, 55, 0.22)",
+              cta: "0 10px 24px -8px rgba(192, 71, 58, 0.45)",
+              "cta-hover": "0 14px 30px -10px rgba(192, 71, 58, 0.55)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <!-- default: admin gizli -->
+  <body
+    class="no-admin bg-background-light dark:bg-background-dark min-h-screen flex items-start justify-center p-4 sm:p-8"
+  >
+    <!-- Menu Container -->
+    <main
+      class="menu-container max-w-6xl w-full bg-background-light dark:bg-background-dark border border-primary/10 shadow-sm relative p-6 sm:p-10 print:max-w-[480px] print:border-0 print:shadow-none print:p-6"
+    >
+      <!-- ADMIN TOOLBAR (dev-only, hidden unless admin mode) -->
+      <div class="admin-only no-print absolute top-4 right-4 flex items-center gap-2 z-40">
+        <button
+          id="toggleAdminBtn"
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-muted-gold/40 bg-background-light/80 px-3 py-2 text-[11px] font-medium tracking-widest uppercase text-primary shadow-sm backdrop-blur hover:bg-background-light focus:outline-none focus:ring-2 focus:ring-muted-gold/40"
+          title="Admin panelini göstər/gizlət"
+        >
+          <span class="material-symbols-outlined text-base">tune</span>
+          Admin
+        </button>
+
+        <button
+          id="addSectionBtn"
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-muted-gold/40 bg-background-light/80 px-3 py-2 text-[11px] font-medium tracking-widest uppercase text-primary shadow-sm backdrop-blur hover:bg-background-light focus:outline-none focus:ring-2 focus:ring-muted-gold/40"
+          title="Bölmə əlavə et"
+        >
+          <span class="material-symbols-outlined text-base">add</span>
+          Bölmə
+        </button>
+
+        <button
+          id="openAddModalBtn"
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-muted-gold/40 bg-background-light/80 px-3 py-2 text-[11px] font-medium tracking-widest uppercase text-primary shadow-sm backdrop-blur hover:bg-background-light focus:outline-none focus:ring-2 focus:ring-muted-gold/40"
+          title="Məhsul əlavə et"
+        >
+          <span class="material-symbols-outlined text-base">add</span>
+          Məhsul
+        </button>
+
+        <button
+          id="exportJsonBtn"
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-muted-gold/40 bg-background-light/80 px-3 py-2 text-[11px] font-medium tracking-widest uppercase text-primary shadow-sm backdrop-blur hover:bg-background-light focus:outline-none focus:ring-2 focus:ring-muted-gold/40"
+          title="Local dəyişiklikləri JSON kimi çıxar"
+        >
+          <span class="material-symbols-outlined text-base">download</span>
+          Export
+        </button>
+      </div>
+
+      <!-- Corner Accents -->
+      <div
+        class="absolute top-0 left-0 w-16 h-16 border-t border-l border-muted-gold/40 pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-16 h-16 border-b border-r border-muted-gold/40 pointer-events-none"
+      ></div>
+
+      <!-- COVER / HOME -->
+      <section class="menu-section" id="cover">
+        <header class="text-center pt-6 pb-4 max-w-xl mx-auto">
+          <!-- Gold divider with icon -->
+          <div class="flex items-center justify-center gap-4 mb-8">
+            <div class="h-[1px] w-10 bg-muted-gold"></div>
+            <span class="material-symbols-outlined text-primary text-xl">restaurant_menu</span>
+            <div class="h-[1px] w-10 bg-muted-gold"></div>
+          </div>
+
+          <!-- Logo -->
+          <div class="flex items-center justify-center">
+            <img
+              src="./assets/logo1.png"
+              alt="MetaSushi"
+              class="w-[220px] sm:w-[260px] h-auto"
+            />
+          </div>
+
+          <!-- Brand tagline -->
+          <p
+            class="mt-4 text-primary/60 text-[10px] uppercase tracking-[0.4em] font-medium"
+          >
+            Baku • MetaSushi
+          </p>
+
+          <!-- Grouped contact info -->
+          <div class="mt-10 max-w-sm mx-auto space-y-3 text-left">
+            <!-- Location -->
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Nizami+metrosu+Baku"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="info-row group flex items-center gap-4 p-4 rounded-2xl border border-muted-gold/30 bg-white/40 dark:bg-menu-charcoal/20 hover:border-muted-gold hover:bg-primary/5 transition"
+            >
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition">
+                <span class="material-symbols-outlined text-primary">location_on</span>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[10px] uppercase tracking-widest text-primary/50 font-medium mb-0.5">
+                  Ünvan
+                </p>
+                <p class="text-sm text-menu-charcoal dark:text-white font-semibold">
+                  Nizami metrosu
+                </p>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/994998840403"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="info-row group flex items-center gap-4 p-4 rounded-2xl border border-muted-gold/30 bg-white/40 dark:bg-menu-charcoal/20 hover:border-muted-gold hover:bg-primary/5 transition"
+            >
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition">
+                <span class="material-symbols-outlined text-primary">chat</span>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[10px] uppercase tracking-widest text-primary/50 font-medium mb-0.5">
+                  WhatsApp
+                </p>
+                <p class="text-sm text-menu-charcoal dark:text-white font-semibold">
+                  099 884 04 03
+                </p>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/metasushi_baku"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="info-row group flex items-center gap-4 p-4 rounded-2xl border border-muted-gold/30 bg-white/40 dark:bg-menu-charcoal/20 hover:border-muted-gold hover:bg-primary/5 transition"
+            >
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition">
+                <span class="material-symbols-outlined text-primary">photo_camera</span>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[10px] uppercase tracking-widest text-primary/50 font-medium mb-0.5">
+                  Instagram
+                </p>
+                <p class="text-sm text-menu-charcoal dark:text-white font-semibold">
+                  metasushi.baku
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- CTA (always visible for users) -->
+          <div class="mt-10">
+            <button
+              id="scrollToMenuBtn"
+              type="button"
+              class="group inline-flex items-center gap-2 rounded-full bg-primary px-9 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white shadow-cta hover:shadow-cta-hover hover:-translate-y-0.5 hover:bg-primary/95 active:translate-y-0 active:scale-[0.98] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-background-light"
+            >
+              Menyuya baxın
+              <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-y-0.5">arrow_downward</span>
+            </button>
+          </div>
+        </header>
+      </section>
+
+      <!-- STICKY CATEGORY NAV (always visible for users) -->
+      <nav
+        id="categoryNav"
+        class="category-nav sticky top-0 z-30 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-y border-secondary/10 -mx-6 sm:-mx-10 px-3 sm:px-10 py-2 sm:py-3 mt-10 mb-8 hidden"
+      >
+        <div
+          id="categoryNavInner"
+          class="flex flex-nowrap gap-1.5 sm:gap-2 overflow-x-auto scrollbar-hide"
+        >
+          <!-- populated by app.js -->
+        </div>
+      </nav>
+
+      <!-- SECTIONS ROOT (app.js fills this) -->
+      <div id="sectionsRoot" class="space-y-14"></div>
+
+      <!-- Footer -->
+      <footer class="mt-20 pb-10 flex flex-col items-center justify-center space-y-4">
+        <div class="flex items-center justify-center gap-4 w-full max-w-[200px]">
+          <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-muted-gold/40"></div>
+          <span class="material-symbols-outlined text-muted-gold text-[12px] opacity-60">flare</span>
+          <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-muted-gold/40"></div>
+        </div>
+
+        <div class="text-center group">
+          <p class="text-primary/50 text-[10px] uppercase tracking-[0.4em] font-medium mb-1">
+            Developed by
+          </p>
+          <a
+            href="https://narix.az/"
+            target="_blank"
+            class="relative inline-block text-primary text-[11px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:text-muted-gold"
+          >
+            Narix
+            <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-muted-gold transition-all duration-500 group-hover:w-full"></span>
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <!-- ADD PRODUCT MODAL (dev-only, no-print) -->
+    <div
+      id="addModal"
+      class="admin-only no-print fixed inset-0 z-50 hidden items-center justify-center p-4"
+      aria-hidden="true"
+    >
+      <div id="addModalBackdrop" class="absolute inset-0 bg-black/40"></div>
+
+      <div
+        class="relative w-full max-w-[480px] bg-background-light dark:bg-background-dark border border-primary/10 shadow-lg p-6 sm:p-8"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h2
+            class="text-menu-charcoal dark:text-white text-sm font-bold uppercase tracking-widest"
+          >
+            Məhsul əlavə et
+          </h2>
+          <button
+            id="closeAddModalBtn"
+            type="button"
+            class="rounded-full border border-muted-gold/40 p-2 text-primary"
+            aria-label="Bağla"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+
+        <form id="addProductForm" class="space-y-4">
+          <div id="sectionSelectWrap"></div>
+
+          <input
+            name="imageUrl"
+            type="text"
+            placeholder="Şəkil yolu (məs: ./assets/filadelfiya.jpg)"
+            required
+            class="w-full rounded-lg border px-3 py-2 text-sm"
+          />
+          <input
+            name="title"
+            type="text"
+            placeholder="Məhsul adı"
+            required
+            class="w-full rounded-lg border px-3 py-2 text-sm"
+          />
+          <textarea
+            name="ingredients"
+            rows="3"
+            placeholder="Tərkib"
+            required
+            class="w-full rounded-lg border px-3 py-2 text-sm"
+          ></textarea>
+          <input
+            name="price"
+            type="number"
+            step="0.01"
+            placeholder="Qiymət"
+            required
+            class="w-full rounded-lg border px-3 py-2 text-sm"
+          />
+
+          <button
+            type="submit"
+            class="w-full rounded-full bg-primary py-3 text-[11px] font-bold uppercase tracking-widest text-white"
+          >
+            Yadda saxla
+          </button>
+
+          <button
+            id="resetMenuBtn"
+            type="button"
+            class="w-full rounded-full border border-muted-gold/40 py-3 text-[11px] font-bold uppercase tracking-widest text-primary"
+            title="Local dəyişiklikləri sil, menu.json-a qayıt"
+          >
+            Reset (JSON-a qayıt)
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS (order is important) -->
+    <script src="./storage.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

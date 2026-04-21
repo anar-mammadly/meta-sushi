@@ -1,0 +1,452 @@
+{
+  "sections": [
+    {
+      "id": "klassik-rollar",
+      "title": "Klassik Rollar",
+      "subtitle": "ROLLAR",
+      "items": [
+        {
+          "id": "klassik-filadelfiya-roll",
+          "title": "Klassik Filadelfiya Roll",
+          "ingredients": "Qızılbalıq, nori, xiyar, düyü, krem pendir",
+          "price": 11.0,
+          "imageUrl": "assets/products/sushi1.jpg"
+        },
+        {
+          "id": "klassik-kaliforniya-roll",
+          "title": "Klassik Kaliforniya Roll",
+          "ingredients": "Krab, nori, xiyar, düyü, krem pendir, tobiko",
+          "price": 11.0,
+          "imageUrl": "assets/products/sushi2.jpg"
+        },
+        {
+          "id": "kaliforniya-roll-qizilbaliq-ile",
+          "title": "Kaliforniya Roll Qızılbalıq ilə",
+          "ingredients": "Qızılbalıq, nori, xiyar, düyü, krem pendir, tobiko",
+          "price": 13.0,
+          "imageUrl": "assets/products/sushi3.jpg"
+        },
+        {
+          "id": "kaliforniya-roll-krevet-ile",
+          "title": "Kaliforniya Roll Krevet ilə",
+          "ingredients": "Krevet, nori, xiyar, düyü, krem pendir, tobiko",
+          "price": 13.0,
+          "imageUrl": "assets/products/sushi4.jpg"
+        },
+        {
+          "id": "alyaska-roll",
+          "title": "Alyaska Roll",
+          "ingredients": "Qızılbalıq, krab, nori, xiyar, düyü, krem pendir",
+          "price": 12.0,
+          "imageUrl": "assets/products/sushi5.jpg"
+        },
+        {
+          "id": "avokado-roll-toyuq-ile",
+          "title": "Avokado Roll Toyuq ilə",
+          "ingredients": "Toyuq flesi, nori, xiyar, avokado, düyü, krem pendir",
+          "price": 11.0,
+          "imageUrl": "assets/products/sushi6.jpg"
+        },
+        {
+          "id": "avokado-roll-qizilbaliq-ile",
+          "title": "Avokado Roll Qızılbalıq ilə",
+          "ingredients": "Qızılbalıq, nori, xiyar, avokado, düyü, krem pendir",
+          "price": 13.0,
+          "imageUrl": "assets/products/sushi7.jpg"
+        },
+        {
+          "id": "avokado-roll-krevet-ile",
+          "title": "Avokado Roll Krevet ilə",
+          "ingredients": "Krevet, nori, xiyar, avokado, düyü, krem pendir",
+          "price": 12.0,
+          "imageUrl": "assets/products/sushi8.jpg"
+        },
+        {
+          "id": "bonito-roll-toyuq-ile",
+          "title": "Bonito Roll Toyuq ilə",
+          "ingredients": "Bonito, toyuq filesi, nori, xiyar, düyü, krem pendir",
+          "price": 11.0,
+          "imageUrl": "assets/products/sushi9.jpg"
+        },
+        {
+          "id": "bonito-roll-qizilbaliq-ile",
+          "title": "Bonito Roll Qızılbalıq ilə",
+          "ingredients": "Bonito, qızılbalıq, nori, xiyar, düyü, krem pendir",
+          "price": 13.0,
+          "imageUrl": "assets/products/sushi10.jpg"
+        },
+        {
+          "id": "krevet-roll",
+          "title": "Krevet Roll",
+          "ingredients": "Krevet, nori, xiyar, düyü, krem pendir",
+          "price": 14.0,
+          "imageUrl": "assets/products/sushi11.jpg"
+        },
+        {
+          "id": "klassik-tuna-roll",
+          "title": "Klassik Tuna Roll",
+          "ingredients": "Tuna balığı, nori, xiyar, düyü, krem pendir",
+          "price": 14.0,
+          "imageUrl": "assets/products/sushi12.jpg"
+        },
+        {
+          "id": "klass-unaqi-roll",
+          "title": "Klass Unaqi Roll",
+          "ingredients": "Unagi, unaqi sousu, nori, avokado, düyü, krem pendir",
+          "price": 17.0,
+          "imageUrl": "assets/products/sushi13.jpg"
+        }
+      ]
+    },
+    {
+      "id": "special-rollar",
+      "title": "Special Rollar",
+      "subtitle": "ROLLAR",
+      "items": [
+        {
+          "id": "cehrayi-roll",
+          "title": "Çəhrayı Roll",
+          "ingredients": "Nori, düyü, pendir, xiyar, krab, masaqo",
+          "price": 12.0,
+          "imageUrl": "assets/products/sushi16.jpg"
+        },
+        {
+          "id": "xususi-tuna",
+          "title": "Xüsusi Tuna",
+          "ingredients": "Nori, qara düyü, pendir, xiyar, tuna",
+          "price": 14.5,
+          "imageUrl": "assets/products/sushi17.jpg"
+        },
+        {
+          "id": "filadelfiya-manqo",
+          "title": "Filadelfiya Manqo",
+          "ingredients": "Nori, düyü, pendir, mango, salmon",
+          "price": 13.0,
+          "imageUrl": "assets/products/sushi18.jpg"
+        },
+        {
+          "id": "cehrayi-krevet",
+          "title": "Çəhrayı Krevet",
+          "ingredients": "Nori, düyü, xiyar, pendir, shrimps, unagi sous, tempura krab",
+          "price": 14.0,
+          "imageUrl": "assets/products/sushi19.jpg"
+        },
+        {
+          "id": "kume",
+          "title": "Kume",
+          "ingredients": "Nori, düyü, yaşıl soğan, qızıl balıq, special sous",
+          "price": 14.0,
+          "imageUrl": "assets/products/sushi20.jpg"
+        },
+        {
+          "id": "minna",
+          "title": "Minna",
+          "ingredients": "Nori, düyü, xiyar, pendir, tamaki, chicken",
+          "price": 15.0,
+          "imageUrl": "assets/products/sushi21.jpg"
+        },
+        {
+          "id": "dill-salmon",
+          "title": "Dill Salmon",
+          "ingredients": "Nori, düyü, xiyar, pendir, qızıl balıq, şüyüd",
+          "price": 15.0,
+          "imageUrl": "assets/products/sushi22.jpg"
+        },
+        {
+          "id": "black-special",
+          "title": "Black Special",
+          "ingredients": "Nori, qara düyü, xiyar, pendir, qızıl balıq, special sous",
+          "price": 16.0,
+          "imageUrl": "assets/products/sushi23.jpg"
+        }
+      ]
+    },
+    {
+      "id": "setler",
+      "title": "Setlər",
+      "subtitle": "SET",
+      "items": [
+        {
+          "id": "cehrayi-set",
+          "title": "Çəhrayı Set",
+          "ingredients": "Pink roll, phladelphia mango, bişmiş alyaska salmon",
+          "price": 34.9,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "qara-set",
+          "title": "Qara Set",
+          "ingredients": "Special tuna, black california krab, bişmiş acılı salmon",
+          "price": 39.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "sari-set",
+          "title": "Sarı Set",
+          "ingredients": "Pink shrimps, special tuna, phladelphia mango, bişmiş alyaska krab",
+          "price": 42.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "mavi-set",
+          "title": "Mavi Set",
+          "ingredients": "Phladelphia, bişmiş acılı krab, hot chicken",
+          "price": 31.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "qirmizi-set",
+          "title": "Qırmızı Set",
+          "ingredients": "Avocado chicken, alyaska, hot cheese",
+          "price": 33.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "yasil-set",
+          "title": "Yaşıl Set",
+          "ingredients": "Special tuna, avocado chicken, bişmiş pendirli krab, bişmiş acılı alyaska krab",
+          "price": 39.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "benovseyi-set",
+          "title": "Bənövşəyi Set",
+          "ingredients": "Avocado chickeh, pink shrimps, bişmiş acılı krab",
+          "price": 30.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "special-set-1",
+          "title": "Special Set 1",
+          "ingredients": "Bonita Roll (8 əd.), Fladelfiya Classic (8 əd.), Special Maki (8 əd.), Shimochi roll (8 əd.), Black Special (8 əd.)",
+          "price": 41.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "special-set-2",
+          "title": "Special Set 2",
+          "ingredients": "Tori Salmon (8 əd.), Fladelfiya Shripms (8 əd.), Yellow Hot Roll Shripms (8 əd.)",
+          "price": 33.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "special-set-3",
+          "title": "Special Set 3",
+          "ingredients": "Tuna Classic (8 əd.), Minna (8 əd.), Hot Roll Kani (11 əd.), Kaliforniya Classic (8 əd.), Alyaska Roll (8 əd.)",
+          "price": 40.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "special-set-4",
+          "title": "Special Set 4",
+          "ingredients": "Bonita Roll (8 əd.), Cheese Roll (8 əd.), Kume (8 əd.)",
+          "price": 32.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "special-set-5",
+          "title": "Special Set 5",
+          "ingredients": "Special Maki (6 əd.), Alyaska Special (6 əd.), Dill Salmon (8 əd.), Tamaki Maki (8 əd.)",
+          "price": 36.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-1",
+          "title": "Set #1",
+          "ingredients": "Bonito Toyuqlu Roll (8 əd.), Klassik Tuna Roll (8 əd.), İsti Kani Roll (8 əd.), İsti Pendirli Roll (8 əd.)",
+          "price": 39.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-2",
+          "title": "Set #2",
+          "ingredients": "Klassik Filadelfiya Roll (8 əd.), Klass Kaliforniya Roll (8 əd.), İsti Pendirli Roll (8 əd.), İsti Toyuqlu Roll (8 əd.)",
+          "price": 37.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-3",
+          "title": "Set #3",
+          "ingredients": "Avokado Roll Toyuq ilə (8 əd.), Pendirli Roll (8 əd.), İsti Kani Roll (8 əd.), İsti Krevetli Roll (8 əd.)",
+          "price": 38.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-4",
+          "title": "Set #4",
+          "ingredients": "İsti Kani Roll (10 əd.), İsti Pendirli Roll (10 əd.), İsti Krevetli Roll (10 əd.), İsti Roll Qızılbalıq ilə (10 əd.)",
+          "price": 36.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-5",
+          "title": "Set #5",
+          "ingredients": "İsti Kani Roll (20 əd.), İsti Toyuqlu Roll (20 əd.)",
+          "price": 31.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-6",
+          "title": "Set #6",
+          "ingredients": "Klassik Unaqi Roll (8 əd.), Alyaska Roll (8 əd.), Klassik Tuna Roll (8 əd.), Kappa Maki (8 əd.)",
+          "price": 41.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-7",
+          "title": "Set #7",
+          "ingredients": "Avokado Roll Toyuq ilə (8 əd.), Pendirli Roll (8 əd.), Maki Qızılbalıq ilə (8 əd.), Kappa Maki (8 əd.)",
+          "price": 39.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-8",
+          "title": "Set #8",
+          "ingredients": "Klassik Tuna Roll (8 əd.), Kappa Maki (8 əd.), Alyaska Roll (8 əd.), Klassik Kaliforniya Roll (8 əd.)",
+          "price": 39.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-9",
+          "title": "Set #9",
+          "ingredients": "Avokado Roll Toyuq ilə (8 əd.), Pendirli Roll (8 əd.), Filadelfiya Roll (8 əd.), Bonito Roll (8 əd.)",
+          "price": 37.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-10",
+          "title": "Set #10",
+          "ingredients": "Alyaska Roll (8 əd.), Krevet Roll (8 əd.), Klassik Tuna Roll (8 əd.)",
+          "price": 28.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-11",
+          "title": "Set #11",
+          "ingredients": "Krevetli Roll (8 əd.), Klassik Unaqi Roll (8 əd.), Maki Qızılbalıq ilə (8 əd.)",
+          "price": 34.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-14",
+          "title": "Set #14",
+          "ingredients": "Pendirli Roll (8 əd.), Bonito Roll (8 əd.), Kappa Maki (8 əd.)",
+          "price": 25.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-17",
+          "title": "Set #17",
+          "ingredients": "Alyaska salmon cheese, Baked spicy Krab, Avocado Roll, Shimochi Chickhen",
+          "price": 34.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-18",
+          "title": "Set #18",
+          "ingredients": "Filadelfiya Klassik, Kaliforniya Klassik, Baked spicy salmon",
+          "price": 29.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "set-19",
+          "title": "Set #19",
+          "ingredients": "Pendirli Roll (8 əd.), Klassik Filadelfiya Roll (8 əd.)",
+          "price": 23.0,
+          "imageUrl": "assets/products/default.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ickiler",
+      "title": "İçkilər",
+      "subtitle": "İÇKİLƏR",
+      "items": [
+        {
+          "id": "hell-300-ml",
+          "title": "Hell® 300 ml",
+          "ingredients": "300 ml",
+          "price": 5.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "bizon-300-ml",
+          "title": "Bizon® 300 ml",
+          "ingredients": "300 ml",
+          "price": 4.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "red-bull-300-ml",
+          "title": "Red Bull® 300 ml",
+          "ingredients": "300 ml",
+          "price": 8.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "sprite-500-ml",
+          "title": "Sprite® 500 ml",
+          "ingredients": "500 ml",
+          "price": 3.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "fanta-500-ml",
+          "title": "Fanta® 500 ml",
+          "ingredients": "500 ml",
+          "price": 3.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "coca-cola-500-ml",
+          "title": "Coca-Cola® 500 ml",
+          "ingredients": "500 ml",
+          "price": 3.0,
+          "imageUrl": "assets/products/default.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sosuslar",
+      "title": "Sosuslar",
+      "subtitle": "ƏLAVƏLƏR",
+      "items": [
+        {
+          "id": "sirin-cilli-sous",
+          "title": "Şirin Çilli Sous",
+          "ingredients": "1 əd.",
+          "price": 1.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "soya-sousu",
+          "title": "Soya Sousu",
+          "ingredients": "1 əd.",
+          "price": 1.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "unaqi-sousu",
+          "title": "Unaqi Sousu",
+          "ingredients": "1 əd.",
+          "price": 2.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "zencefil",
+          "title": "Zəncəfil",
+          "ingredients": "1 əd.",
+          "price": 1.0,
+          "imageUrl": "assets/products/default.jpg"
+        },
+        {
+          "id": "vasabi",
+          "title": "Vasabi",
+          "ingredients": "1 əd.",
+          "price": 1.0,
+          "imageUrl": "assets/products/default.jpg"
+        }
+      ]
+    }
+  ]
+}
