@@ -31,6 +31,8 @@ const modal = document.getElementById("addModal");
 const backdrop = document.getElementById("addModalBackdrop");
 const closeAddModalBtn = document.getElementById("closeAddModalBtn");
 const form = document.getElementById("addProductForm");
+const modalTitle = document.querySelector("#addModal h2");
+const formSubmitBtn = form?.querySelector('button[type="submit"]');
 
 const sectionSelectWrap = document.getElementById("sectionSelectWrap");
 const resetMenuBtn = document.getElementById("resetMenuBtn");
@@ -48,6 +50,8 @@ const categoryNavInner = document.getElementById("categoryNavInner");
 let defaultMenu = { sections: [] };
 let effectiveMenu = { sections: [] };
 let __catObserver = null;
+let modalMode = "add";
+let editingItemRef = null;
 
 /* =========================
    HELPERS
@@ -101,6 +105,37 @@ function getItemByIds(sectionId, itemId) {
   if (!section) return null;
   const item = section.items.find((i) => i.id === itId);
   return item || null;
+}
+
+function setModalMode(mode, opts = {}) {
+  modalMode = mode === "edit" ? "edit" : "add";
+  editingItemRef = modalMode === "edit" ? opts : null;
+
+  if (modalTitle) {
+    modalTitle.textContent =
+      modalMode === "edit" ? "Məhsulu redaktə et" : "Məhsul əlavə et";
+  }
+  if (formSubmitBtn) {
+    formSubmitBtn.textContent = modalMode === "edit" ? "Yenilə" : "Yadda saxla";
+  }
+  if (resetMenuBtn) {
+    resetMenuBtn.classList.toggle("hidden", modalMode === "edit");
+  }
+}
+
+function fillModalForm(data = {}) {
+  if (!form) return;
+  const imageInput = form.elements.namedItem("imageUrl");
+  const titleInput = form.elements.namedItem("title");
+  const ingredientsInput = form.elements.namedItem("ingredients");
+  const priceInput = form.elements.namedItem("price");
+  const sectionSelect = form.elements.namedItem("sectionId");
+
+  if (imageInput) imageInput.value = String(data.imageUrl ?? "");
+  if (titleInput) titleInput.value = String(data.title ?? "");
+  if (ingredientsInput) ingredientsInput.value = String(data.ingredients ?? "");
+  if (priceInput) priceInput.value = String(data.price ?? "");
+  if (sectionSelect && data.sectionId) sectionSelect.value = String(data.sectionId);
 }
 
 /* =========================
@@ -261,27 +296,15 @@ function wireDynamicButtons() {
       const itemId = btn.getAttribute("data-item-id");
       const current = getItemByIds(sectionId, itemId);
       if (!current) return;
-
-      const title = prompt("Məhsul adı:", current.title);
-      if (title === null) return;
-
-      const ingredients = prompt("Tərkib:", current.ingredients);
-      if (ingredients === null) return;
-
-      const priceRaw = prompt("Qiymət (AZN):", String(current.price ?? ""));
-      if (priceRaw === null) return;
-
-      const imageUrl = prompt("Şəkil yolu:", current.imageUrl);
-      if (imageUrl === null) return;
-
-      effectiveMenu = S.updateItemInSection(effectiveMenu, sectionId, itemId, {
-        title,
-        ingredients,
-        price: Number(priceRaw),
-        imageUrl,
+      setModalMode("edit", { sectionId, itemId });
+      fillModalForm({
+        sectionId,
+        imageUrl: current.imageUrl,
+        title: current.title,
+        ingredients: current.ingredients,
+        price: current.price,
       });
-      recomputeEffectiveMenu();
-      render();
+      openModal();
     });
   });
 
@@ -436,6 +459,7 @@ function closeModal() {
   modal.classList.add("hidden");
   modal.classList.remove("flex");
   modal.setAttribute("aria-hidden", "true");
+  setModalMode("add");
 }
 
 function renderSectionSelectInModal() {
@@ -500,6 +524,8 @@ addSectionBtn?.addEventListener("click", handleAddSection);
 
 openAddModalBtn?.addEventListener("click", () => {
   if (isAdminHidden()) return;
+  setModalMode("add");
+  form?.reset();
   openModal();
 });
 
@@ -524,16 +550,27 @@ form?.addEventListener("submit", (e) => {
 
   const fd = new FormData(form);
   const sectionId = String(fd.get("sectionId") || "").trim();
-
-  effectiveMenu = S.addItemToSection(effectiveMenu, sectionId, {
+  const payload = {
     title: fd.get("title"),
     ingredients: fd.get("ingredients"),
     price: fd.get("price"),
     imageUrl: fd.get("imageUrl"),
-  });
+  };
+
+  if (modalMode === "edit" && editingItemRef?.itemId) {
+    effectiveMenu = S.updateItemInSection(
+      effectiveMenu,
+      editingItemRef.sectionId,
+      editingItemRef.itemId,
+      payload
+    );
+  } else {
+    effectiveMenu = S.addItemToSection(effectiveMenu, sectionId, payload);
+  }
 
   recomputeEffectiveMenu();
   form.reset();
+  setModalMode("add");
   closeModal();
   render();
 });
