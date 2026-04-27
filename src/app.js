@@ -94,6 +94,15 @@ function downloadTextFile(filename, text, mime = "application/json;charset=utf-8
   URL.revokeObjectURL(url);
 }
 
+function getItemByIds(sectionId, itemId) {
+  const secId = String(sectionId || "").trim();
+  const itId = String(itemId || "").trim();
+  const section = effectiveMenu.sections.find((s) => s.id === secId);
+  if (!section) return null;
+  const item = section.items.find((i) => i.id === itId);
+  return item || null;
+}
+
 /* =========================
    FETCH DEFAULT MENU
 ========================= */
@@ -210,14 +219,24 @@ function render() {
             </div>
           </div>
 
-          <button
-            type="button"
-            class="admin-only no-print jsDeleteItem mt-2 text-[10px] uppercase tracking-widest text-red-600 hover:underline"
-            data-section-id="${escapeHtml(section.id)}"
-            data-item-id="${escapeHtml(item.id)}"
-          >
-            Sil
-          </button>
+          <div class="admin-only no-print mt-2 flex items-center gap-3">
+            <button
+              type="button"
+              class="jsEditItem text-[10px] uppercase tracking-widest text-primary hover:underline"
+              data-section-id="${escapeHtml(section.id)}"
+              data-item-id="${escapeHtml(item.id)}"
+            >
+              Edit
+            </button>
+            <button
+              type="button"
+              class="jsDeleteItem text-[10px] uppercase tracking-widest text-red-600 hover:underline"
+              data-section-id="${escapeHtml(section.id)}"
+              data-item-id="${escapeHtml(item.id)}"
+            >
+              Sil
+            </button>
+          </div>
         `;
 
         grid.appendChild(card);
@@ -233,6 +252,39 @@ function render() {
 }
 
 function wireDynamicButtons() {
+  // Edit item buttons
+  sectionsRoot.querySelectorAll(".jsEditItem").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (isAdminHidden()) return;
+
+      const sectionId = btn.getAttribute("data-section-id");
+      const itemId = btn.getAttribute("data-item-id");
+      const current = getItemByIds(sectionId, itemId);
+      if (!current) return;
+
+      const title = prompt("Məhsul adı:", current.title);
+      if (title === null) return;
+
+      const ingredients = prompt("Tərkib:", current.ingredients);
+      if (ingredients === null) return;
+
+      const priceRaw = prompt("Qiymət (AZN):", String(current.price ?? ""));
+      if (priceRaw === null) return;
+
+      const imageUrl = prompt("Şəkil yolu:", current.imageUrl);
+      if (imageUrl === null) return;
+
+      effectiveMenu = S.updateItemInSection(effectiveMenu, sectionId, itemId, {
+        title,
+        ingredients,
+        price: Number(priceRaw),
+        imageUrl,
+      });
+      recomputeEffectiveMenu();
+      render();
+    });
+  });
+
   // Delete item buttons
   sectionsRoot.querySelectorAll(".jsDeleteItem").forEach((btn) => {
     btn.addEventListener("click", () => {
