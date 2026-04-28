@@ -738,7 +738,7 @@
           "title": "Hell® 300 ml",
           "ingredients": "300 ml",
           "price": 5,
-          "imageUrl": "assets/products/icki-hell.avif"
+          "imageUrl": "assets/products/icki-hell.jpg"
         },
         {
           "id": "bizon-300-ml",
@@ -752,28 +752,28 @@
           "title": "Red Bull® 300 ml",
           "ingredients": "300 ml",
           "price": 8,
-          "imageUrl": "assets/products/icki-redbull.avif"
+          "imageUrl": "assets/products/icki-redbull.jpg"
         },
         {
           "id": "sprite-500-ml",
           "title": "Sprite® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-sprite.avif"
+          "imageUrl": "assets/products/icki-sprite.jpg"
         },
         {
           "id": "fanta-500-ml",
           "title": "Fanta® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-fanta.avif"
+          "imageUrl": "assets/products/icki-fanta.jpg"
         },
         {
           "id": "coca-cola-500-ml",
           "title": "Coca-Cola® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-cola.avif"
+          "imageUrl": "assets/products/icki-cola.jpg"
         }
       ]
     },
@@ -787,28 +787,28 @@
           "title": "Şirin Çilli Sous",
           "ingredients": "1 əd.",
           "price": 1,
-          "imageUrl": "assets/products/sous-sirin-cili.avif"
+          "imageUrl": "assets/products/sous-sirin-cili.jpg"
         },
         {
           "id": "zencefil",
           "title": "Zəncəfil",
           "ingredients": "1 əd.",
           "price": 1,
-          "imageUrl": "assets/products/sous-zencefil.avif"
+          "imageUrl": "assets/products/sous-zencefil.jpg"
         },
         {
           "id": "soya-sousu",
           "title": "Soya Sousu",
           "ingredients": "1 əd.",
           "price": 1,
-          "imageUrl": "assets/products/sous-soya.avif"
+          "imageUrl": "assets/products/sous-soya.jpg"
         },
         {
           "id": "vasabi",
           "title": "Vasabi",
           "ingredients": "1 əd.",
           "price": 1,
-          "imageUrl": "assets/products/sous-vasabi.avif"
+          "imageUrl": "assets/products/sous-vasabi.jpg"
         },
         {
           "id": "unaqi-sousu",
