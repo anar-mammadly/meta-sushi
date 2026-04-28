@@ -104,6 +104,118 @@
       "subtitle": "ROLLAR",
       "items": [
         {
+          "id": "item-11c983e1-a1bd-4296-8c2d-0fcfa1144ee7",
+          "title": "Tori Shimps",
+          "ingredients": "Nori, düyü, xiyar, pendir, krevetlər, special sous",
+          "price": 14,
+          "imageUrl": "assets/products/meta9.jpg"
+        },
+        {
+          "id": "item-4a435ff6-a43c-4052-af3b-3d4cf9c42e3d",
+          "title": "Tori Tuna",
+          "ingredients": "Nori, düyü, xiyar, pendir, ton balığı, special sous",
+          "price": 15,
+          "imageUrl": "assets/products/meta9.jpg"
+        },
+        {
+          "id": "item-17089542-53d2-4648-88d1-bbd41d2f930e",
+          "title": "Tori Salmon",
+          "ingredients": "Nori, düyü, xiyar, pendir, qızıl balıq, special sous",
+          "price": 13,
+          "imageUrl": "assets/products/meta9.jpg"
+        },
+        {
+          "id": "item-89428968-853a-4af6-9628-96225438f31b",
+          "title": "Special Maki Shrimps",
+          "ingredients": "Nori, düyü, xiyar, pendir, krevetlər, special sous",
+          "price": 14,
+          "imageUrl": "assets/products/meta17.jpg"
+        },
+        {
+          "id": "item-e4828149-f282-48b6-b65b-a90add1a8c01",
+          "title": "Special Maki Salmon",
+          "ingredients": "Nori, düyü, xiyar, pendir, qızıl balıq, special sous",
+          "price": 14,
+          "imageUrl": "assets/products/meta17.jpg"
+        },
+        {
+          "id": "item-64d7bbf2-17e7-4216-8374-436eaf3f0f43",
+          "title": "Special Maki Tuna",
+          "ingredients": "Nori, düyü, xiyar, pendir, ton balığı, special sous",
+          "price": 15,
+          "imageUrl": "assets/products/meta17.jpg"
+        },
+        {
+          "id": "item-546f7180-fc20-498d-9d16-c9400aba252f",
+          "title": "Alyaska Special Shrimps",
+          "ingredients": "Nori, düyü, xiyar, pendir, krevetlər, küncüt, special sous",
+          "price": 14,
+          "imageUrl": "assets/products/meta16.jpg"
+        },
+        {
+          "id": "item-06be6491-835c-4e99-ba1f-d81e6783ba76",
+          "title": "Alyaska Special Tuna",
+          "ingredients": "Nori, düyü, xiyar, pendir, ton balığı, küncüt, special sous",
+          "price": 15,
+          "imageUrl": "assets/products/meta16.jpg"
+        },
+        {
+          "id": "item-96c565b6-7885-4c18-8c38-f711007a6197",
+          "title": "Alyaska Special Salmon",
+          "ingredients": "Nori, düyü, xiyar, pendir, qızıl balıq, küncüt, special sous",
+          "price": 13,
+          "imageUrl": "assets/products/meta16.jpg"
+        },
+        {
+          "id": "item-6a869f30-99e1-4b1f-a833-466cbeae448f",
+          "title": "Shimochi Shrimps",
+          "ingredients": "Nori, düyü, xiyar, pendir, tamaki, krevetlər",
+          "price": 14,
+          "imageUrl": "assets/products/meta7.jpg"
+        },
+        {
+          "id": "item-b04f928b-6722-4a27-ae3c-7b7787755069",
+          "title": "Shimochi Tuna  Shimochi Tuna",
+          "ingredients": "Nori, düyü, xiyar, pendir, tamaki, ton balığı",
+          "price": 15,
+          "imageUrl": "assets/products/meta7.jpg"
+        },
+        {
+          "id": "item-2ac9ab53-b55e-4832-8f99-3515a9b60d6c",
+          "title": "Shimochi Salmon",
+          "ingredients": "Nori, düyü, xiyar, pendir, tamaki, qızıl balıq",
+          "price": 13,
+          "imageUrl": "assets/products/meta7.jpg"
+        },
+        {
+          "id": "item-760225f5-78e0-4ec6-a710-400353f79b47",
+          "title": "Shimochi Chicken",
+          "ingredients": "Nori, düyü, xiyar, pendir, tamaki, chicken",
+          "price": 12,
+          "imageUrl": "assets/products/meta7.jpg"
+        },
+        {
+          "id": "item-39a5da53-f82d-456f-9cc3-315c61866180",
+          "title": "Qara Kaliforniya Yengəc",
+          "ingredients": "Nori, qara düyü, tabiko, pendir, xiyar, krab",
+          "price": 13,
+          "imageUrl": "assets/products/meta14.jpg"
+        },
+        {
+          "id": "item-74f64e52-ad07-4567-8fbd-a26bdf17aacd",
+          "title": "Qara Kaliforniya Qızılbalığı",
+          "ingredients": "Nori, qara düyü, tabiko, pendir, xiyar, salmon",
+          "price": 14,
+          "imageUrl": "assets/products/meta14.jpg"
+        },
+        {
+          "id": "item-8ae0f822-7697-4b4d-aa11-f34f9b31c719",
+          "title": "Qara Kaliforniya Krivetka",
+          "ingredients": "Nori, qara düyü, tabiko, pendir, xiyar, krevet",
+          "price": 15,
+          "imageUrl": "assets/products/meta14.jpg"
+        },
+        {
           "id": "cehrayi-roll",
           "title": "Çəhrayı Roll",
           "ingredients": "Nori, düyü, pendir, xiyar, krab, masaqo",
