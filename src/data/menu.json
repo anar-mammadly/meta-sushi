@@ -234,7 +234,7 @@
           "title": "Çəhrayı Roll",
           "ingredients": "Nori, düyü, pendir, xiyar, krab, masaqo",
           "price": 13,
-          "imageUrl": "assets/products/sushi16.jpg"
+          "imageUrl": "assets/products/meta150.jpg"
         },
         {
           "id": "xususi-tuna",
@@ -269,14 +269,14 @@
           "title": "Minna",
           "ingredients": "Nori, düyü, xiyar, pendir, tamaki, chicken",
           "price": 15,
-          "imageUrl": "assets/products/sushi21.jpg"
+          "imageUrl": "assets/products/meta157.jpg"
         },
         {
           "id": "dill-salmon",
           "title": "Dill Salmon",
           "ingredients": "Nori, düyü, xiyar, pendir, qızıl balıq, şüyüd",
           "price": 14,
-          "imageUrl": "assets/products/sushi22.jpg"
+          "imageUrl": "assets/products/meta156.jpg"
         },
         {
           "id": "black-special",
@@ -500,35 +500,35 @@
           "title": "Special Set 1",
           "ingredients": "Bonita Roll (8 əd.), Fladelfiya Classic (8 əd.), Special Maki (8 əd.), Shimochi roll (8 əd.), Black Special (8 əd.)",
           "price": 41,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta151.jpg"
         },
         {
           "id": "special-set-2",
           "title": "Special Set 2",
           "ingredients": "Tori Salmon (8 əd.), Fladelfiya Shripms (8 əd.), Yellow Hot Roll Shripms (8 əd.)",
           "price": 33,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta152.jpg"
         },
         {
           "id": "special-set-3",
           "title": "Special Set 3",
           "ingredients": "Tuna Classic (8 əd.), Minna (8 əd.), Hot Roll Kani (11 əd.), Kaliforniya Classic (8 əd.), Alyaska Roll (8 əd.)",
           "price": 40,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta153.jpg"
         },
         {
           "id": "special-set-4",
           "title": "Special Set 4",
           "ingredients": "Bonita Roll (8 əd.), Cheese Roll (8 əd.), Kume (8 əd.)",
           "price": 32,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta154.jpg"
         },
         {
           "id": "special-set-5",
           "title": "Special Set 5",
           "ingredients": "Special Maki (6 əd.), Alyaska Special (6 əd.), Dill Salmon (8 əd.), Tamaki Maki (8 əd.)",
           "price": 36,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta155.jpg"
         },
         {
           "id": "set-1",
@@ -619,7 +619,7 @@
           "title": "Set #17",
           "ingredients": "Alyaska salmon cheese, Baked spicy Krab, Avocado Roll, Shimochi Chickhen",
           "price": 34,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta158.jpg"
         },
         {
           "id": "set-18",
@@ -633,105 +633,105 @@
           "title": "Set 13",
           "ingredients": "Philadelphia Classic (8 əd.), Kaliforniya Classic (8 əd.), Hot Kani (10 əd.)",
           "price": 28,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta160.jpg"
         },
         {
           "id": "set-12",
           "title": "Set 12",
           "ingredients": "Avocado Roll (8 əd.), Chips Roll (8 əd.), Cuka Roll (8 əd.)",
           "price": 29,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta159.jpg"
         },
         {
           "id": "set-15",
           "title": "Set 15",
           "ingredients": "Alyaska Roll (8 əd.), Special Maki Roll (8 əd.), Chips Roll (8 əd.), Hot Kani (10 əd.)",
           "price": 35,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta161.jpg"
         },
         {
           "id": "set-16",
           "title": "Set 16",
           "ingredients": "Kaliforniya Classic (8 əd.), Philadelphia Classic (8 əd.), Salmon Maki (8 əd.), Hot Kani (10 əd.)",
           "price": 40,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta162.jpg"
         },
         {
           "id": "set-23",
           "title": "Set 23",
           "ingredients": "Pendirli Roll (8 əd.), Klassik Filadelfiya Roll (8 əd.), İsti Kani Roll (8 əd.), Kappa Maki (6 əd.)",
           "price": 23,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta163.jpg"
         },
         {
           "id": "set-24",
           "title": "Set 24",
           "ingredients": "Klassik Tuna Roll (8 əd.), Alyaska Roll (8 əd.), Klassik Kaliforniya Roll (8 əd.), İsti Kani Roll (10 əd.), İsti Krevetli Roll (10 əd.), İsti Pendirli Roll (10 əd.)",
           "price": 40,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta164.jpg"
         },
         {
           "id": "set-25",
           "title": "Set 25",
           "ingredients": "Alyaska Roll (8 əd.), Krevet Roll (8 əd.), Klassik Tuna Roll (8 əd.)",
           "price": 28,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta165.jpg"
         },
         {
           "id": "set-26",
           "title": "Set 26",
           "ingredients": "İsti Kani Roll (10 əd.), İsti Toyuqlu Roll (10 əd.), İsti Krevetli Roll (10 əd.), Klassik Filadelfiya Roll (8 əd.), Kappa Maki (8 əd.)",
           "price": 40,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta166.jpg"
         },
         {
           "id": "set-27",
           "title": "Set 27",
           "ingredients": "Bonito Toyuqlu Roll (8 əd.), Klassik Tuna Roll (8 əd.), İsti Kani Roll (8 əd.), İsti Pendirli Roll (8 əd.)",
           "price": 35,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta167.jpg"
         },
         {
           "id": "set-28",
           "title": "Set 28",
           "ingredients": "Avokado Roll Toyuq ilə (8 əd.), Pendirli Roll (8 əd.), Maki Qızılbalıq ilə (8 əd.), Kappa Maki (12 əd.)",
           "price": 33,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta168.jpg"
         },
         {
           "id": "set-29",
           "title": "Set 29",
           "ingredients": "Klassik Tuna Roll (8 əd.), Kappa Maki (8 əd.), Alyaska Roll (8 əd.), Klassik Kaliforniya Roll (8 əd.), İsti Kani Roll (10 əd.), İsti Toyuqlu Roll (12 əd.)",
           "price": 43,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta169.jpg"
         },
         {
           "id": "set-30",
           "title": "Set 30",
           "ingredients": "Klassik Filadelfiya Roll (8 əd.), Klassik Kaliforniya Roll (8 əd.), İsti Pendirli Roll (8 əd.), İsti Toyuqlu Roll (8 əd.)",
           "price": 35,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta170.jpg"
         },
         {
           "id": "set-31",
           "title": "Set 31",
           "ingredients": "Pendirli Roll (8 əd.), Klassik Filadelfiya Roll (8 əd.)",
           "price": 23,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta171.jpg"
         },
         {
           "id": "set-32",
           "title": "Set 32",
           "ingredients": "Pendirli Roll (8 əd.), Bonito Roll (8 əd.), Kappa Maki (8 əd.)",
           "price": 28,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta172.jpg"
         },
         {
           "id": "set-33",
           "title": "Set 33",
           "ingredients": "Avokado Roll Toyuq ilə (8 əd.), Pendirli Roll (8 əd.), Filadelfiya Roll (8 əd.), Bonito Roll (8 əd.)",
           "price": 35,
-          "imageUrl": "assets/products/default.jpg"
+          "imageUrl": "assets/products/meta173.jpg"
         }
       ]
     },
