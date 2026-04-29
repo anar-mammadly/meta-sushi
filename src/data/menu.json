@@ -738,7 +738,7 @@
           "title": "Hell® 300 ml",
           "ingredients": "300 ml",
           "price": 5,
-          "imageUrl": "assets/products/icki-hell.jpg"
+          "imageUrl": "assets/products/icki-hell.png"
         },
         {
           "id": "bizon-300-ml",
@@ -752,28 +752,28 @@
           "title": "Red Bull® 300 ml",
           "ingredients": "300 ml",
           "price": 8,
-          "imageUrl": "assets/products/icki-redbull.jpg"
+          "imageUrl": "assets/products/icki-redbull.png"
         },
         {
           "id": "sprite-500-ml",
           "title": "Sprite® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-sprite.jpg"
+          "imageUrl": "assets/products/icki-sprite.png"
         },
         {
           "id": "fanta-500-ml",
           "title": "Fanta® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-fanta.jpg"
+          "imageUrl": "assets/products/icki-fanta.png"
         },
         {
           "id": "coca-cola-500-ml",
           "title": "Coca-Cola® 500 ml",
           "ingredients": "500 ml",
           "price": 3,
-          "imageUrl": "assets/products/icki-cola.jpg"
+          "imageUrl": "assets/products/icki-cola.png"
         }
       ]
     },
