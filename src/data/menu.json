@@ -785,8 +785,8 @@
       ]
     },
     {
-      "id": "sosuslar",
-      "title": "Sosuslar",
+      "id": "souslar",
+      "title": "SOUSLAR",
       "subtitle": "ƏLAVƏLƏR",
       "items": [
         {
@@ -794,7 +794,7 @@
           "title": "Şirin Çilli Sous",
           "ingredients": "1 əd.",
           "price": 1,
-          "imageUrl": "assets/products/sosu-sirin-cilli.png"
+          "imageUrl": "assets/products/metaelnur.png"
         },
         {
           "id": "zencefil",
